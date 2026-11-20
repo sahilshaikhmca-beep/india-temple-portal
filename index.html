@@ -1,10 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>India Temple Portal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India Temple Heritage & Pilgrimage Portal</title>
+  <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
-    <h1>Welcome to India Temple Portal</h1>
-    <p>Your website is being prepared!</p>
+  <header class="site-header"><div class="container">
+    <a class="logo" href="./index.html">🛕 India Temple Heritage Portal</a>
+    <nav><a href="./index.html">Temples</a><a href="./pilgrimages.html">Pilgrimages</a><a href="./about.html">About</a></nav>
+  </div></header>
+  <main class="container"><section class="hero">
+  <h1>Explore India's Temples &amp; Pilgrimage Destinations</h1>
+  <p>Browse heritage temples, their history and the best time to visit.</p>
+  <form class="search-form" id="searchForm">
+    <input id="query" type="text" placeholder="Search by name, city, deity...">
+    <select id="state"><option value="">All states</option></select>
+    <button type="submit">Search</button>
+    <button type="button" id="resetSearch">Reset</button>
+  </form>
+</section>
+<p class="count" id="count"></p>
+<div class="grid" id="templeGrid"></div>
+<script src="./static/js/data.js"></script>
+<script>
+const grid = document.getElementById('templeGrid');
+const stateSelect = document.getElementById('state');
+[...new Set(window.TEMPLES.map(t => t.state))].sort().forEach(s => {
+  const option = document.createElement('option'); option.value = s; option.textContent = s; stateSelect.appendChild(option);
+});
+function renderTemples() {
+  const q = document.getElementById('query').value.trim().toLowerCase();
+  const state = stateSelect.value;
+  const results = window.TEMPLES.filter(t =>
+    (!state || t.state === state) &&
+    (!q || [t.name,t.city,t.deity,t.category].some(v => v.toLowerCase().includes(q)))
+  );
+  document.getElementById('count').textContent = results.length + ' temple(s) found';
+  grid.innerHTML = results.length ? results.map(t => `
+    <article class="card">
+      <span class="tag">${t.category}</span><h2>${t.name}</h2>
+      <p class="meta">📍 ${t.city}, ${t.state}</p><p class="meta">🙏 ${t.deity}</p>
+      <p>${t.summary}</p><a class="btn" href="./temple/${t.slug}/index.html">View details</a>
+    </article>`).join('') : '<p>No temples matched your search.</p>';
+}
+document.getElementById('searchForm').addEventListener('submit', e => { e.preventDefault(); renderTemples(); });
+document.getElementById('resetSearch').addEventListener('click', () => { document.getElementById('query').value=''; stateSelect.value=''; renderTemples(); });
+renderTemples();
+</script></main>
+  <footer class="site-footer"><div class="container">India Temple Heritage &amp; Pilgrimage Information Portal</div></footer>
 </body>
 </html>

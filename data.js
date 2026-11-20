@@ -1,0 +1,205 @@
+window.TEMPLES = [
+  {
+    "slug": "kashi-vishwanath",
+    "name": "Kashi Vishwanath Temple",
+    "city": "Varanasi",
+    "state": "Uttar Pradesh",
+    "deity": "Shiva",
+    "category": "Jyotirlinga",
+    "era": "Present structure rebuilt in 1780 by Ahilyabai Holkar",
+    "best_time": "October to March",
+    "summary": "One of the twelve Jyotirlingas, set on the banks of the Ganga in one of the world's oldest living cities.",
+    "highlights": [
+      "Ganga Aarti at Dashashwamedh Ghat",
+      "Kashi Vishwanath Corridor",
+      "Nearby Sarnath"
+    ]
+  },
+  {
+    "slug": "meenakshi-amman",
+    "name": "Meenakshi Amman Temple",
+    "city": "Madurai",
+    "state": "Tamil Nadu",
+    "deity": "Meenakshi (Parvati) and Sundareswarar (Shiva)",
+    "category": "Dravidian Architecture",
+    "era": "Present complex largely built during the Nayak period (16th-17th century)",
+    "best_time": "October to March",
+    "summary": "A vast Dravidian temple complex known for its towering gopurams covered in colourful sculptures.",
+    "highlights": [
+      "14 gopurams",
+      "Hall of Thousand Pillars",
+      "Golden Lotus Tank"
+    ]
+  },
+  {
+    "slug": "brihadisvara",
+    "name": "Brihadisvara Temple",
+    "city": "Thanjavur",
+    "state": "Tamil Nadu",
+    "deity": "Shiva",
+    "category": "UNESCO World Heritage (Great Living Chola Temples)",
+    "era": "Completed around 1010 CE by Rajaraja I",
+    "best_time": "October to March",
+    "summary": "A masterpiece of Chola architecture, famous for its 66 m vimana and a monolithic granite capstone.",
+    "highlights": [
+      "Vimana tower",
+      "Chola frescoes",
+      "Large Nandi monolith"
+    ]
+  },
+  {
+    "slug": "konark-sun",
+    "name": "Konark Sun Temple",
+    "city": "Konark",
+    "state": "Odisha",
+    "deity": "Surya",
+    "category": "UNESCO World Heritage",
+    "era": "13th century, attributed to Narasimhadeva I",
+    "best_time": "October to February",
+    "summary": "A temple designed as a colossal chariot of the Sun God, with intricately carved stone wheels.",
+    "highlights": [
+      "Stone chariot wheels",
+      "Kalinga architecture",
+      "Konark Dance Festival"
+    ]
+  },
+  {
+    "slug": "jagannath-puri",
+    "name": "Jagannath Temple",
+    "city": "Puri",
+    "state": "Odisha",
+    "deity": "Jagannath (Vishnu)",
+    "category": "Char Dham",
+    "era": "12th century, associated with the Eastern Ganga dynasty",
+    "best_time": "October to March (Rath Yatra in June-July)",
+    "summary": "One of the four Char Dham sites, world-famous for the annual Rath Yatra chariot festival.",
+    "highlights": [
+      "Rath Yatra",
+      "Mahaprasad",
+      "Puri beach nearby"
+    ]
+  },
+  {
+    "slug": "tirumala-venkateswara",
+    "name": "Tirumala Venkateswara Temple",
+    "city": "Tirupati",
+    "state": "Andhra Pradesh",
+    "deity": "Venkateswara (Vishnu)",
+    "category": "Vaishnava Shrine",
+    "era": "Ancient shrine, expanded under Pallava, Chola and Vijayanagara patronage",
+    "best_time": "September to February",
+    "summary": "One of the most visited pilgrimage sites in the world, on the Tirumala hills.",
+    "highlights": [
+      "Seven hills",
+      "Laddu prasadam",
+      "Brahmotsavam festival"
+    ]
+  },
+  {
+    "slug": "somnath",
+    "name": "Somnath Temple",
+    "city": "Veraval (Prabhas Patan)",
+    "state": "Gujarat",
+    "deity": "Shiva",
+    "category": "Jyotirlinga",
+    "era": "Present temple completed in 1951 on an ancient site",
+    "best_time": "October to March",
+    "summary": "The first of the twelve Jyotirlingas, standing on the shore of the Arabian Sea.",
+    "highlights": [
+      "Sea-facing location",
+      "Evening light show",
+      "Triveni Sangam"
+    ]
+  },
+  {
+    "slug": "kedarnath",
+    "name": "Kedarnath Temple",
+    "city": "Kedarnath",
+    "state": "Uttarakhand",
+    "deity": "Shiva",
+    "category": "Jyotirlinga / Chota Char Dham",
+    "era": "Ancient; the present structure is traditionally linked to Adi Shankaracharya",
+    "best_time": "May to June and September to October (closed in winter)",
+    "summary": "A high-altitude Himalayan shrine near the source of the Mandakini river.",
+    "highlights": [
+      "Himalayan trek from Gaurikund",
+      "Chorabari Tal",
+      "Bhairavnath Temple"
+    ]
+  },
+  {
+    "slug": "badrinath",
+    "name": "Badrinath Temple",
+    "city": "Badrinath",
+    "state": "Uttarakhand",
+    "deity": "Vishnu (Badri Narayan)",
+    "category": "Char Dham / Chota Char Dham",
+    "era": "Ancient; traditionally associated with Adi Shankaracharya",
+    "best_time": "May to June and September to October (closed in winter)",
+    "summary": "Set beside the Alaknanda river, it is part of both the Char Dham and Chota Char Dham circuits.",
+    "highlights": [
+      "Tapt Kund hot springs",
+      "Mana village",
+      "Alaknanda river"
+    ]
+  },
+  {
+    "slug": "ramanathaswamy",
+    "name": "Ramanathaswamy Temple",
+    "city": "Rameswaram",
+    "state": "Tamil Nadu",
+    "deity": "Shiva",
+    "category": "Char Dham / Jyotirlinga",
+    "era": "Present structure built mainly between the 12th and 17th centuries",
+    "best_time": "October to April",
+    "summary": "Famous for its long pillared corridors and 22 holy water tanks (theerthams) inside the complex.",
+    "highlights": [
+      "Longest corridors among Indian temples",
+      "22 theerthams",
+      "Pamban Bridge"
+    ]
+  }
+];
+window.PILGRIMAGES = [
+  {
+    "name": "Char Dham (Four Abodes)",
+    "description": "The four great pilgrimage sites at the four corners of India, traditionally linked to Adi Shankaracharya.",
+    "stops": [
+      "Badrinath (North)",
+      "Dwarka (West)",
+      "Puri (East)",
+      "Rameswaram (South)"
+    ],
+    "duration": "2-4 weeks by road and rail"
+  },
+  {
+    "name": "Chota Char Dham (Uttarakhand)",
+    "description": "A Himalayan circuit open only in the warmer months.",
+    "stops": [
+      "Yamunotri",
+      "Gangotri",
+      "Kedarnath",
+      "Badrinath"
+    ],
+    "duration": "10-12 days"
+  },
+  {
+    "name": "Twelve Jyotirlingas",
+    "description": "Twelve major Shiva shrines across India.",
+    "stops": [
+      "Somnath",
+      "Mallikarjuna",
+      "Mahakaleshwar",
+      "Omkareshwar",
+      "Kedarnath",
+      "Bhimashankar",
+      "Kashi Vishwanath",
+      "Trimbakeshwar",
+      "Vaidyanath",
+      "Nageshwar",
+      "Rameshwaram",
+      "Grishneshwar"
+    ],
+    "duration": "Planned over several trips"
+  }
+];
