@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block body %}
+<section class="hero">
+  <h1>Explore India's Temples &amp; Pilgrimage Destinations</h1>
+  <p>Browse heritage temples, their history and the best time to visit.</p>
+  <form method="get" class="search-form">
+    <input type="text" name="q" value="{{ query }}" placeholder="Search by name, city, deity...">
+    <select name="state">
+      <option value="">All states</option>
+      {% for s in states %}
+      <option value="{{ s }}" {% if s == selected_state %}selected{% endif %}>{{ s }}</option>
+      {% endfor %}
+    </select>
+    <button type="submit">Search</button>
+  </form>
+</section>
+
+<p class="count">{{ temples|length }} temple(s) found</p>
+
+<div class="grid">
+  {% for t in temples %}
+  <article class="card">
+    <span class="tag">{{ t.category }}</span>
+    <h2>{{ t.name }}</h2>
+    <p class="meta">📍 {{ t.city }}, {{ t.state }}</p>
+    <p class="meta">🙏 {{ t.deity }}</p>
+    <p>{{ t.summary }}</p>
+    <a class="btn" href="{{ url_for('temple_detail', slug=t.slug) }}">View details</a>
+  </article>
+  {% else %}
+  <p>No temples matched your search.</p>
+  {% endfor %}
+</div>
+{% endblock %}

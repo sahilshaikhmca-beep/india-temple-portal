@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India Temple Heritage &amp; Pilgrimage Portal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="{{ url_for('index') }}">🛕 India Temple Heritage Portal</a>
+      <nav>
+        <a href="{{ url_for('index') }}">Temples</a>
+        <a href="{{ url_for('pilgrimages') }}">Pilgrimages</a>
+        <a href="{{ url_for('about') }}">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {% block body %}{% if content %}<p>{{ content }}</p>{% endif %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">India Temple Heritage &amp; Pilgrimage Information Portal</div>
+  </footer>
+</body>
+</html>

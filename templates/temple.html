@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block body %}
+<a href="{{ url_for('index') }}">&larr; Back to all temples</a>
+<article class="detail">
+  <span class="tag">{{ temple.category }}</span>
+  <h1>{{ temple.name }}</h1>
+  <p class="meta">📍 {{ temple.city }}, {{ temple.state }}</p>
+  <p>{{ temple.summary }}</p>
+
+  <table class="info">
+    <tr><th>Deity</th><td>{{ temple.deity }}</td></tr>
+    <tr><th>Era / History</th><td>{{ temple.era }}</td></tr>
+    <tr><th>Best time to visit</th><td>{{ temple.best_time }}</td></tr>
+  </table>
+
+  <h2>Highlights</h2>
+  <ul>
+    {% for h in temple.highlights %}<li>{{ h }}</li>{% endfor %}
+  </ul>
+</article>
+{% endblock %}

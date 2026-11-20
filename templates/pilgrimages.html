@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Pilgrimage Circuits</h1>
+<div class="grid">
+  {% for c in circuits %}
+  <article class="card">
+    <h2>{{ c.name }}</h2>
+    <p>{{ c.description }}</p>
+    <p class="meta">⏱ {{ c.duration }}</p>
+    <ol>
+      {% for s in c.stops %}<li>{{ s }}</li>{% endfor %}
+    </ol>
+  </article>
+  {% endfor %}
+</div>
+{% endblock %}
