@@ -1,0 +1,122 @@
+window.TEMPLES = [
+  {
+    slug: "kashi-vishwanath-temple",
+    name: "Kashi Vishwanath Temple",
+    city: "Varanasi",
+    state: "Uttar Pradesh",
+    deity: "Shiva",
+    category: "Jyotirlinga",
+    summary: "One of the 12 Jyotirlingas, located on the banks of the Ganga.",
+    era: "Present structure rebuilt in 1780 by Ahilyabai Holkar.",
+    best_time: "October to March",
+    highlights: ["Ganga Aarti at Dashashwamedh Ghat", "Kashi Vishwanath Corridor", "Nearby Sarnath"]
+  },
+  {
+    slug: "meenakshi-amman-temple",
+    name: "Meenakshi Amman Temple",
+    city: "Madurai",
+    state: "Tamil Nadu",
+    deity: "Meenakshi (Parvati) and Sundareswarar (Shiva)",
+    category: "Dravidian Architecture",
+    summary: "A famous Dravidian temple known for its beautifully sculpted gopurams.",
+    era: "Present complex largely built during the Nayak period (16th–17th century).",
+    best_time: "October to March",
+    highlights: ["14 gopurams", "Hall of Thousand Pillars", "Golden Lotus Tank"]
+  },
+  {
+    slug: "brihadisvara-temple",
+    name: "Brihadisvara Temple",
+    city: "Thanjavur",
+    state: "Tamil Nadu",
+    deity: "Shiva",
+    category: "UNESCO World Heritage",
+    summary: "A magnificent Chola temple with a 66-metre vimana and a granite capstone.",
+    era: "Completed around 1010 CE by Rajaraja I.",
+    best_time: "October to March",
+    highlights: ["Vimana tower", "Chola frescoes", "Large Nandi monolith"]
+  },
+  {
+    slug: "konark-sun-temple",
+    name: "Konark Sun Temple",
+    city: "Konark",
+    state: "Odisha",
+    deity: "Surya",
+    category: "UNESCO World Heritage",
+    summary: "A colossal stone temple designed as a chariot of the Sun God.",
+    era: "13th century, attributed to Narasimhadeva I.",
+    best_time: "October to February",
+    highlights: ["Stone chariot wheels", "Kalinga architecture", "Konark Dance Festival"]
+  },
+  {
+    slug: "jagannath-temple",
+    name: "Jagannath Temple",
+    city: "Puri",
+    state: "Odisha",
+    deity: "Jagannath (Vishnu)",
+    category: "Char Dham",
+    summary: "One of the four Char Dham pilgrimage sites, famous for its annual Rath Yatra.",
+    era: "12th century, Eastern Ganga dynasty.",
+    best_time: "October to March (Rath Yatra in June–July)",
+    highlights: ["Rath Yatra", "Mahaprasad", "Puri beach nearby"]
+  },
+  {
+    slug: "tirumala-venkateswara-temple",
+    name: "Tirumala Venkateswara Temple",
+    city: "Tirupati",
+    state: "Andhra Pradesh",
+    deity: "Venkateswara (Vishnu)",
+    category: "Vaishnava Shrine",
+    summary: "A highly visited pilgrimage destination situated on the Tirumala hills.",
+    era: "Ancient; expanded under Pallava, Chola and Vijayanagara patronage.",
+    best_time: "September to February",
+    highlights: ["Seven hills", "Laddu prasadam", "Brahmotsavam festival"]
+  },
+  {
+    slug: "somnath-temple",
+    name: "Somnath Temple",
+    city: "Veraval (Prabhas Patan)",
+    state: "Gujarat",
+    deity: "Shiva",
+    category: "Jyotirlinga",
+    summary: "The first of the 12 Jyotirlingas, located on the Arabian Sea shore.",
+    era: "Present temple completed in 1951 on an ancient site.",
+    best_time: "October to March",
+    highlights: ["Sea-facing location", "Evening light show", "Triveni Sangam"]
+  },
+  {
+    slug: "kedarnath-temple",
+    name: "Kedarnath Temple",
+    city: "Kedarnath",
+    state: "Uttarakhand",
+    deity: "Shiva",
+    category: "Jyotirlinga / Chota Char Dham",
+    summary: "A high-altitude Himalayan shrine near the source region of the Mandakini River.",
+    era: "Ancient; current structure traditionally linked to Adi Shankaracharya.",
+    best_time: "May–June and September–October (closed in winter)",
+    highlights: ["Himalayan trek from Gaurikund", "Chorabari Tal", "Bhairavnath Temple"]
+  },
+  {
+    slug: "badrinath-temple",
+    name: "Badrinath Temple",
+    city: "Badrinath",
+    state: "Uttarakhand",
+    deity: "Vishnu (Badri Narayan)",
+    category: "Char Dham / Chota Char Dham",
+    summary: "A sacred Vishnu temple on the banks of the Alaknanda River.",
+    era: "Ancient; traditionally associated with Adi Shankaracharya.",
+    best_time: "May–June and September–October (closed in winter)",
+    highlights: ["Tapt Kund hot springs", "Mana village", "Alaknanda River"]
+  },
+  {
+    slug: "ramanathaswamy-temple",
+    name: "Ramanathaswamy Temple",
+    city: "Rameswaram",
+    state: "Tamil Nadu",
+    deity: "Shiva",
+    category: "Char Dham / Jyotirlinga",
+    summary: "A famous temple known for its long pillared corridors and 22 holy water tanks.",
+    era: "Present structure mainly built between the 12th and 17th centuries.",
+    best_time: "October to April",
+    highlights: ["Long pillared corridors", "22 theerthams", "Pamban Bridge"]
+  }
+];
