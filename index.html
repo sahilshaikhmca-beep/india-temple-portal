@@ -42,7 +42,7 @@ function renderTemples() {
     <article class="card">
       <span class="tag">${t.category}</span><h2>${t.name}</h2>
       <p class="meta">📍 ${t.city}, ${t.state}</p><p class="meta">🙏 ${t.deity}</p>
-      <p>${t.summary}</p><a class="btn" href="./temple/${t.slug}/index.html">View details</a>
+      <p>${t.summary}</p><a class="btn" href="./temple.html?slug=${t.slug}">View details</a>
     </article>`).join('') : '<p>No temples matched your search.</p>';
 }
 document.getElementById('searchForm').addEventListener('submit', e => { e.preventDefault(); renderTemples(); });
