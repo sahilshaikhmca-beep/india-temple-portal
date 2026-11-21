@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Details - India Temple Portal</title>
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="./index.html">🛕 India Temple Heritage Portal</a>
+    <nav>
+      <a href="./index.html">Temples</a>
+      <a href="./pilgrimages.html">Pilgrimages</a>
+      <a href="./about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <p><a href="./index.html">← Back to all temples</a></p>
+  <article class="detail" id="templeDetails">
+    Loading temple details...
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    India Temple Heritage & Pilgrimage Information Portal
+  </div>
+</footer>
+
+<script src="./data.js"></script>
+<script>
+const params = new URLSearchParams(window.location.search);
+const slug = params.get("slug");
+
+const temple = window.TEMPLES.find(t => t.slug === slug);
+const container = document.getElementById("templeDetails");
+
+if (temple) {
+  document.title = temple.name + " - India Temple Portal";
+
+  container.innerHTML = `
+    <span class="tag">${temple.category}</span>
+    <h1>${temple.name}</h1>
+    <p class="meta">📍 ${temple.city}, ${temple.state}</p>
+    <p>${temple.summary}</p>
+
+    <table class="info">
+      <tr><th>Deity</th><td>${temple.deity}</td></tr>
+      <tr><th>History</th><td>${temple.era}</td></tr>
+      <tr><th>Best time to visit</th><td>${temple.best_time}</td></tr>
+    </table>
+
+    <h2>Highlights</h2>
+    <ul>
+      ${temple.highlights.map(item => `<li>${item}</li>`).join("")}
+    </ul>
+  `;
+} else {
+  container.innerHTML = "<h1>Temple not found</h1><p>Please return to the homepage.</p>";
+}
+</script>
+
+</body>
+</html>
